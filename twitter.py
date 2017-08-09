@@ -64,7 +64,7 @@ if __name__ == '__main__':
             count += 1
         print('=' * 30 + ('\n読み込んだツイート数: %d\n' % count) + '=' * 30)
         # next_results に次の検索クエリが存在する限り、ツイートを取得する
-        while 'next_results' in data['search_metadata'] and len(data['search_metadata']['next_results']) > 0:
+        while 'next_results' in data['search_metadata'] and len(data['search_metadata']['next_results']) > 0 and count <= 1200:
             # URL を作成
             url = SEARCH_API_URL + data['search_metadata']['next_results']
             # 結果を取得
