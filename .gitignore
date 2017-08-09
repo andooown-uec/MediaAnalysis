@@ -117,3 +117,11 @@ pyvenv.cfg
 pip-selfcheck.json
 
 # End of https://www.gitignore.io/api/venv,python
+
+# Security
+twitter_config.py
+
+# VSCode
+.vscode/
+
+tweets*.csv
