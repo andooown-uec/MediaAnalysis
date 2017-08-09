@@ -51,7 +51,7 @@ if __name__ == '__main__':
         count = 0   # 処理したツイート数
         # クエリパラメータを作成
         query = {
-            'q': "電通大 exclude:retweets",
+            'q': word + " exclude:retweets",
             'count': 100
         }
         # URL を作成
